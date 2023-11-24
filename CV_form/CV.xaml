@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CV_form.CV"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="20" HorizontalOptions="Center">
+            <Label Text="Nombre: " FontSize="18"/>
+            <Label Text=" " FontSize="18" x:Name="rsnombre"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="20" HorizontalOptions="Center">
+            <Label Text="Apellido: " FontSize="18"/>
+            <Label Text=" " x:Name="rsapellido" FontSize="18"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="20" HorizontalOptions="Center">
+            <Label Text="Correo: "  FontSize="18"/>
+            <Label Text=" " x:Name="rscorreo" FontSize="18"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="20" HorizontalOptions="Center">
+            <Label Text="Telefono: "  FontSize="18"/>
+            <Label Text=" " x:Name="rstelefono" FontSize="18"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="20" HorizontalOptions="Center">
+            <Label Text="Ocupacion: " FontSize="18" />
+            <Label Text=" " x:Name="rsocupacion" FontSize="18"/>
+        </StackLayout>
+        <StackLayout>
+            <Button Text="volver" FontSize="Small" FontAttributes="Bold" x:Name="volver" Clicked="volver_Clicked" HorizontalOptions="Center"/>
+        </StackLayout>
+     </StackLayout>
+</ContentPage>

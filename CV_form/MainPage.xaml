@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CV_form.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Label  Text="Formulario CV" FontSize="Large" HorizontalTextAlignment="Center" BackgroundColor="Black"></Label>
+        <StackLayout Margin="20">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nombre: " FontSize="18" />
+                <Entry Keyboard="Text" Placeholder="Ingresa tu nombre" x:Name="rptaname" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Apellido: " FontSize="18" />
+                <Entry Keyboard="Text" Placeholder="Ingresa tu apellido" x:Name="rptasurname"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Correo: " FontSize="18" />
+                <Entry Keyboard="Text" Placeholder="Ingresa tu correo" x:Name="rptagmail"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Telefono: " FontSize="18" />
+                <Entry Keyboard="Text" Placeholder="Ingresa tu telefono" x:Name="rptaphone"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Ocupacion: " FontSize="18" />
+                <Entry Keyboard="Text" Placeholder="Ingresa tu ocupacion" x:Name="rptaocupation"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Enviar" FontSize="Small" FontAttributes="Bold" x:Name="enviar_FCV" Clicked="enviar_FCV_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
